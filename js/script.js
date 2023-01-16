@@ -1,9 +1,17 @@
-// const answers=[];
-// // answers[0]= prompt('what is your name?', '');
-// // answers[1]= prompt('what is your surname?', '');
-// // answers[2]= prompt('what is your age?', '');
-// //document.write(answers);
-// console.log(typeof(answers));
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-const category= 'toys';
-console.log(' ')
+const personalMovieDB = {
+    count:numberOfFilms,
+    movies: {},
+    actors: {},
+   genries: [],
+   privat: false 
+};
+const a = prompt( 'Один из последних просмотренных фильмов ?', ''),
+b = prompt('На сколько оцениваете его?', ''),
+c = prompt( 'Один из последних просмотренных фильмов ?', ''),
+d = prompt('На сколько оцениваете его?', '');
+
+personalMovieDB.movies[a]= b;
+personalMovieDB.movies[c]= d;
+console.log(personalMovieDB);
